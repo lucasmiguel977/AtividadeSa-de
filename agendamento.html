@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento PDA</title>
+    <link rel="shortcut icon" href="./pda-icon.jpg">
+    <link rel="stylesheet" type="text/css" href="style-agendamento.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="./logo-pda.png" id="logo" alt="Lodo do PDA nas cores: branco e amarelo
+        "></a>
+        <nav>
+            <ul id="links-nav">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="agendamento.html">Agendamento</a></li>
+                <li><a href="triagem.html">Triagem</a></li>
+                <li><a href="exames.html">Resultado de Exames</a></li>
+            </ul>
+        </nav>
+        <a id="entrar" href="login.html"><button type="subit">Entrar</button></button></a>
+    </header>
+    <main>
+        <section class="formulario">
+            <div id="form-campo">
+                <div class="campo">
+                    <br>
+                    <h1>Agendamento de Consulta</h1>
+                    <p id="subtitulo">Preencha com suas informações</p>
+
+                </div class="campo">
+                <form action="" id="form">
+                    <fieldset class="grupo">
+                        <br>
+                        <div class="campo">
+                            <label for="cpf">CPF: *</label>
+                            <input type="tel" name="cpf" id="cpf" placeholder="CPF" autocomplete="off" required>
+
+                        </div>
+
+                        <div class="campo">
+                            <label for="nome">Nome Completo: *</label>
+                            <input type="text" name="nome" id="nome" placeholder="Nome completo" autocomplete="off"
+                                required>
+
+                        </div>
+
+                        <div class="campo">
+                            <label for="data">Data de Nascimento: *</label>
+                            <input type="date" name="data" id="data" required>
+                        </div>
+
+                        <div class="campo">
+                            <label>Gênero: *</label>
+                            <select name="genero" id="genero" required>
+                                <option name="seleciona" id="seleciona" value="">Selecione</option>
+                                <option name="hcis" id="hcis" value="hcis">Homem Cis</option>
+                                <option name="mcis" id="mcis" value="mcis">Mulher Cis</option>
+                                <option name="htrans" id="htrans" value="htrans">Homem Trans</option>
+                                <option name="mtrans" id="mtrans" value="mtrans">Mulher Trans</option>
+                                <option name="nb" id="nb" value="nb">Não-Binário</option>
+                            </select>
+                        </div>
+
+                        <div class="campo">
+                            <label for="email">E-mail: *</label>
+                            <input type="email" name="email" id="email" placeholder="E-mail" autocomplete="off"
+                                required>
+                        </div>
+
+                        <div class="campo">
+                            <label for="numero">Telefone: *</label>
+                            <input type="tel" name="numero" id="numero" placeholder="Telefone celular para receber SMS"
+                                autocomplete="off" required>
+                        </div>
+
+                        <div class="campo">
+                            <label for="especialidade">Especialidade Médica: *</label>
+                            <input type="text" name="especialidade" id="especialidade"
+                                placeholder="Especialidade Médica" required>
+                        </div>
+
+                        <div class="campo">
+                            <label for="horario">Horários disponiveis: *</label>
+                            <select name="horario" id="horario" required>
+                                <option value="">Escolha</option>
+                                <option value="9am">09:00</option>
+                                <option value="9-30am">09:30</option>
+                                <option value="10am">10:00</option>
+                                <option value="10-30am">10:30</option>
+                                <option value="11am">11:00</option>
+                                <option value="11-30am">11:30</option>
+                                <option value="12pm">12:00</option>
+                                <option value="13pm">13:00</option>
+                                <option value="13-30pm">13:30</option>
+                                <option value="14pm">14:00</option>
+                                <option value="14-30pm">14:30</option>
+                                <option value="15pm">15:00</option>
+                                <option value="15-30pm">15:30</option>
+                                <option value="16pm">16:00</option>
+                                <option value="16-30pm">16:30</option>
+                            </select>
+                        </div>
+                        <br>
+                        <hr>
+                        <br>
+                        <div class="campo">
+                            <label for="cep">CEP: *</label>
+                            <input type="text" name="cep" id="cep" placeholder="CEP" required>
+                        </div>
+
+                        <div class="campo">
+                            <label for="rua">Logradouro: *</label>
+                            <input type="text" name="rua" id="rua" placeholder="Logradouro" required>
+                        </div>
+
+                        <div class="campo">
+                            <label for="bairro">Bairro: *</label>
+                            <input type="text" name="bairro" id="bairro" placeholder="Bairro" required>
+                        </div>
+
+                        <div class="campo">
+                            <label for="cidade">Cidade: *</label>
+                            <input type="text" name="city" id="city" placeholder="Cidade" required>
+                        </div>
+
+                        <div class="campo">
+                            <label for="estado">Estado: *</label>
+                            <select name="estado" id="estado" required>
+                                <option value="">Selecione</option>
+                                <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="ES">Espírito Santo</option>
+                                <option value="GO">Goiás</option>
+                                <option value="PB">João Pessoa</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Pará</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>
+                            </select>
+                            <br>
+                            <p>* Campos Obrigatórios</p>
+                        </div>
+                        
+                        <div class="button">
+                            <button type="submit" id="agendar">Agendar</button>
+                        </div>
+                        <br>
+                    </fieldset>
+            </div>
+            </form>
+            <br>
+            <br>
+        </section>
+    </main>
+    <footer>
+        <br>
+        <p id="p-footer">Desenvolvido pelo Grupo 5 na aula de programação do <a
+                href="https://programadoresdoamanha.org/"> PDA</a></p>
+        <br>
+        <br>
+</body>
+</html>

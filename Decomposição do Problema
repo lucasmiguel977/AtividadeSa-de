@@ -1,0 +1,15 @@
+Primeiro percebemos que deveríamos estabelecer um critério e uma ordem para atendimento.
+Escolhemos dividir o atendimento em duas etapas: Logo após a chegada do paciente verificamos se o paciente está desacordado, caso sim é encaminhado direto para a especialidade médica desejada. 
+Caso não é preciso que passe pelo procedimento abaixo:
+Primeira onde o paciente faz a ficha para a triagem. E a 2 onde o paciente passa pela triagem. 
+Resolvemos que a cada 6 senhas distribuídas a contagem zera e assim distribuímos de 6 em 6 senhas.
+Depois escolhemos que a cada 3 pacientes atendidos na triagem 3 teriam prioridade.
+A ordem para a distribuição de senhas ficou: A cada 1 paciente não preferencial, logo após entra um paciente preferencial.
+Sendo assim os números dos pacientes não preferenciais ficaram: 1, 3 e 5. E dos pacientes preferenciais ficaram: 2, 4 e 6.
+Logo após estabelecemos os critérios básicos para que os pacientes sejam considerados prioridade.
+E com isso estabelecemos que pacientes com mais de 60 anos, gestantes, portadores de deficiência, portadores de patologias e os que possuem doença crônica são considerados prioridade.
+Na triagem os pacientes preenchem uma ficha médica e são encaminhadas para o médico especialista.
+A ordem como organizamos as filas para o atendimento nas alas específicas é basicamente a mesma, a única diferença é que distribuímos 10 senhas por vez. 
+Sendo assim os números dos pacientes não preferenciais fixaram: 1, 3, 5, 7 e 9. E a dos pacientes preferenciais ficaram 2, 4, 6, 8 e 10.
+
+

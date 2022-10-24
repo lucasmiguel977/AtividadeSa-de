@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta class="checkbox" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triagem PDA</title>
+    <link rel="shortcut icon" href="./pda-icon.jpg">
+    <link rel="stylesheet" type="text/css" href="style-triagem.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="./logo-pda.png" id="logo" alt="Lodo do PDA nas cores: branco e amarelo
+        "></a>
+        <nav>
+            <ul id="links-nav">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="agendamento.html">Agendamento</a></li>
+                <li><a href="triagem.html">Triagem</a></li>
+                <li><a href="exames.html">Resultado de Exames</a></li>
+            </ul>
+        </nav>
+        <a id="entrar" href="login.html"><button type="subit">Entrar</button></button></a>
+    </header>
+    <main>
+        <section class="formulario">
+            <div id="form-campo">
+                <div class="campo">
+                    <br>
+                    <h1>Ficha para Triagem</h1>
+                    <p id="subtitulo">Preencha com suas informações</p>
+
+                </div class="campo">
+                <form action="" id="form">
+                    <fieldset class="grupo">
+                        <br>
+
+                        <div class="campo">
+                            <label for="nome">Nome Completo: *</label>
+                            <input type="text" name="nome" id="nome" placeholder="Nome completo" autocomplete="off"
+                                required>
+
+                        </div>
+
+                        <div class="campo">
+                            <label for="data">Peso: *</label>
+                            <input type="peso" name="peso" id="peso" placeholder="Peso" required>
+                        </div>
+
+                        <div class="campo">
+                            <label for="data">Altura: *</label>
+                            <input type="altura" name="altura" id="altura" placeholder="Altura" required>
+                        </div>
+
+                        <div class="campo">
+                            <label for="data">Idade: *</label>
+                            <input type="idade" name="idade" id="idade" placeholder="Idade" required>
+                        </div>
+
+                        <div class="campo">
+                            <label for="emergencia">Consulta marcada ou Emêrgencia?</label>
+                            <select name="emergencia" id="emergencia" required>
+                                <option name="selecione" id="selecione" value="">Selecione</option>
+                                <option name="emergencia" id="emergencia" value="e">Emergencia</option>
+                                <option name="consulta" id="consulta" value="cm">Consulta Marcada</option>
+                            </select>
+                        </div>
+
+                        <div class="campo">
+                            <label>Gênero: *</label>
+                            <select name="genero" id="genero" required>
+                                <option name="seleciona" id="seleciona" value="">Selecione
+                                <option name="hcis" id="hcis" value="hcis">Homem Cis
+                                <option name="mcis" id="mcis" value="mcis">Mulher Cis
+                                <option name="htrans" id="htrans" value="htrans">Homem Trans
+                                <option name="mtrans" id="mtrans" value="mtrans">Mulher Trans
+                                <option name="nb" id="nb" value="nb">Não-Binário
+                            </select>
+                        </div>
+
+                        <div class="campo">
+                            <label for="numero">Telefone: *</label>
+                            <input type="tel" name="numero" id="numero" placeholder="Telefone para emergências"
+                                autocomplete="off" required>
+                        </div>
+
+                        <div class="campo">
+                            <label for="data">Data de Hoje: *</label>
+                            <input type="date" name="data" id="data" required>
+                        </div>
+
+                        <div class="campo">
+                            <label for="especialidade">Especialidade Médica: *</label>
+                            <input type="text" name="especialidade" id="especialidade"
+                                placeholder="Especialidade Médica" required>
+                        </div>
+
+                        <br>
+                        <hr>
+                        <br>
+
+                        <div class="campo">
+                            <label for="gravidez">Caso tenha útero, existe a possibilidade de gravidez?*</label>
+                            <select class="checkbox" name="gravidez" id="gravidez" required>
+                                <option name="responda" id="responda" value="">Responda
+                                <option name="sim" id="sim" value="s">Sim
+                                <option name="nao" id="nao" value="n">Não
+                            </select>
+                        </div>
+
+                        <div class="campo">
+                            <label for="menst">Caso tenha útero, quando foi a sua última menstruação?*</label>
+                            <input type="date" class="checkbox" name="menst" id="menst" value="menst">
+                        </div>
+
+                        <div class="campo">
+                            <label for="">Marque os sintomas que você está sentindo:*</label>
+                            <br>
+                            <label>
+                                <input type="checkbox" class="checkbox" name="diarreia" value="dpeito">Dor no Peito
+                            </label>
+                            <label>
+                                <input type="checkbox" class="checkbox" name="dpeito" value="dpeito">Dor no Peito
+                            </label>
+                            <label>
+                                <input type="checkbox" class="checkbox" name="dcabeca" value="dccabeca">Dor de
+                                Cabeça
+                            </label>
+                            <label>
+                                <input type="checkbox" class="checkbox" name="destomago" value="destomago">Dor no
+                                Estômago
+                            </label>
+                            <label>
+                                <input type="checkbox" class="checkbox" name="dcorpo" value="dcorpo">Dores no
+                                Corpo
+                            </label>
+                            <label>
+                                <input type="checkbox" class="checkbox" name="far" value="far">Falta de Ar
+                            </label>
+                            <label>
+                                <input type="checkbox" class="checkbox" name="febre" value="febre">Febre
+                            </label>
+                            <label>Outro:</label>
+                            <input type="textarea" name="s-outros" id="s-outros" value=" ">
+                        </div>
+
+                        <div class="campo">
+                            <label for="">Marque as opções que se aplica a você e/ou algum parente próximo da sua
+                                familia:</label>
+                            <br>
+                            <label>
+                                <input type="checkbox" class="checkbox" name="asma" value="asma">Asma
+                            </label>
+                            <label>
+                                <input type="checkbox" class="checkbox" name="cancer" value="cancer">Câncer
+                            </label>
+                            <label>
+                                <input type="checkbox" class="checkbox" name="diabetes" value="diabetes">Diabetes
+                            </label>
+                            <label>
+                                <input type="checkbox" class="checkbox" name="dcardiaca" value="dcardiacas">Doença
+                                Cardíaca
+                            </label>
+                            <label>
+                                <input type="checkbox" class="checkbox" name="hipertensao"
+                                    value="hipertensao">Hipertensão
+                            </label>
+                            <label>
+                                <input type="checkbox" class="checkbox" name="dpsi" value="dpsi">Distúrbios
+                                Psiquiátricos
+                            </label>
+                            <label>
+                                <input type="checkbox" class="checkbox" name="epilepsia" value="epilepsia">Epilepsia
+                            </label>
+                            <label>Outro:</label>
+                            <input type="textarea" class="checkbox" name="p-outros" value="">
+                        </div>
+
+                        <div class="campo">
+                            <label for="medicacao">Você tem tomado alguma medicação atualmente? Por favor,
+                                especifique-os aqui.</label>
+                            <input type="textarea" name="medicacao" id="medicacao" value="">
+                            <br>
+                            <p>* Campos Obrigatórios</p>
+                        </div>
+
+                        <div class="button">
+                            <button type="submit" id="enviar">Enviar</button>
+                        </div>
+                        <br>
+
+                    </fieldset>
+
+                </form>
+        </section>
+        <br>
+        <br>
+        <br>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo Grupo 5 na Aula de Programação do <a href>PDA</a></p>
+        <br>
+        <br>
+    </footer>
+</body>
+
+</html>

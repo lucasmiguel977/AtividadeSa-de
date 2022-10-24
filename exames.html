@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados dos Exames PDA</title>
+    <link rel="shortcut icon" href="./pda-icon.jpg">
+    <link rel="stylesheet" type="text/css" href="style-exames.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="./logo-pda.png" id="logo" alt="Lodo do PDA nas cores: branco e amarelo
+        "></a>
+        <nav>
+            <ul id="links-nav">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="agendamento.html">Agendamento</a></li>
+                <li><a href="triagem.html">Triagem</a></li>
+                <li><a href="exames.html">Resultado de Exames</a></li>
+            </ul>
+        </nav>
+        <a id="entrar" href="login.html"><button type="subit">Entrar</button></button></a>
+    </header>
+    <main>
+        <section class="formulario">
+            <div id="form-campo">
+                <div class="campo">
+                    <br>
+                    <h1>Resultados dos Exames</h1>
+                    <p id="subtitulo">Preencha com suas informações</p>
+
+                </div class="campo">
+                <form action="" id="form">
+                    <fieldset class="grupo">
+                        <br>
+
+                        <div class="campo">
+                            <label for="nome">Nome Completo: *</label>
+                            <input type="text" name="nome" id="nome" placeholder="Nome completo" autocomplete="off"
+                                required>
+
+                        </div>
+
+                        <div class="campo">
+                            <label for="cpf">CPF: *</label>
+                            <input type="text" name="cpf" id="cpf" placeholder="cpf" required>
+                        </div>
+
+                        <div class="campo">
+                            <label for="data">E-mail: *</label>
+                            <input type="email" name="email" id="email" placeholder="Email" required>
+                        </div>
+
+                        <div class="campo">
+                            <label for="data">Número do Cadastro do SUS: *</label>
+                            <input type="number" name="sus" id="sus" placeholder="Número do Casdastro do SUS" required>
+                        </div>
+
+                        <div class="campo">
+                            <label for="data">Tipo de Exame: *</label>
+                            <input type="exame" name="exame" id="exame" placeholder="Tipo de Exame" required>
+                        </div>
+                    
+                        <div class="button">
+                            <button type="submit" id="enviar">Enviar</button>
+                        </div>
+                        <br>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+        <br>
+        <br>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo Grupo 5 na Aula de Programação do <a href>PDA</a></p>
+        <br>
+        <br>
+    </footer>
+</body>
+
+</html>

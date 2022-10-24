@@ -1,0 +1,172 @@
+@font-face {
+    font-family: 'gothic';
+    src: url(dela-gothic-one-regular.ttf) format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff9b9;
+}
+
+li,
+a {
+    text-decoration: none;
+    font-family: gothic;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+button {
+    font-family: gothic;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+header {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#logo {
+    cursor: pointer;
+}
+
+#links-nav {
+    list-style: none;
+}
+
+#links-nav li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+#links-nav li a {
+    transition: all 0.3s 0s;
+}
+
+#links-nav li a:hover {
+    color: #ecdb20;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: #ecdb20;
+    color: #2c0726;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s 0s;
+}
+
+button:hover {
+    background-color: #2c0726;
+    color: #ecdb20;
+}
+
+#entrar {
+    background-color: #2c0726;
+    color: #fff;
+}
+
+#entrar:hover {
+    background-color: #2c0726;
+    color: #ecdb20;
+}
+
+h1 {
+    font-family: gothic;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+#subtitulo {
+    font-family: gothic;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#form-campo {
+    background-color: #ecdb20;
+}
+
+#formulario {
+    display: inline-block;
+    flex-direction: column;
+}
+
+#form {
+    display: flex;
+    justify-content: baseline;
+    margin-left: 100px;
+}
+
+fieldset {
+    border: 0;
+}
+
+#form-campo {
+    border-radius: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 2%;
+    font-size: 23px;
+}
+
+p {
+    font-size: 20px;
+}
+
+label {
+    font-family: gothic;
+    font-size: 16px;
+    display: block;
+}
+
+input,
+select {
+    border: 3px solid;
+    border-radius: 10px;
+}
+
+input,
+select {
+    width: 400px;
+    height: 40px;
+    padding-left: 10px;
+}
+
+.campo input:focus,
+.campo select:focus {
+    background: #e0e0f8;
+}
+
+.campo {
+    margin-bottom: 1em;
+}
+
+footer {
+    background-color: black;
+    color: #ecdb20
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer:hover {
+    transition: all 0.3s 0s;
+    background-color: #ecdb20;
+    color: #2c0726
+}
